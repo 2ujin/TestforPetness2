@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#888888"
+    tools:context="s2017s16.kr.hs.mirim.testforpetness.StatusActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bgcolor"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="토비"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="17.7dp"/>
+                <!--건강정보-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12.7dp"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="42.7dp"
+                    android:paddingLeft="47.7dp"
+                    android:layout_marginBottom="17.7dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/menubtn"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="건강 정보"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="18.3dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+                        <!--체온-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginRight="70dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="체온"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8.3dp"/>
+                            <ImageView
+                                android:layout_width="16.3dp"
+                                android:layout_height="59.3dp"
+                                android:src="@drawable/body_temperature"
+                                android:layout_marginBottom="10dp"/>
+                            <TextView
+                                android:id="@+id/temperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="38.5°C"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"/>
+                        </LinearLayout><!--End of 체온-->
+                        <!--심박수-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginRight="44.3dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="심박수"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="14.3dp"/>
+                            <ImageView
+                                android:layout_width="53.3dp"
+                                android:layout_height="49dp"
+                                android:src="@drawable/heart_rate"
+                                android:layout_marginBottom="14.7dp"/>
+                            <TextView
+                                android:id="@+id/heartrate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="128/m"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"/>
+                        </LinearLayout><!--End of 심박수-->
+                        <!--호흡수-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="호흡수"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="25.7dp" />
+                            <ImageView
+                                android:layout_width="66.3dp"
+                                android:layout_height="27.7dp"
+                                android:src="@drawable/respiration"
+                                android:layout_marginBottom="25dp" />
+                            <TextView
+                                android:id="@+id/respiration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="24/m"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp" />
+                        </LinearLayout><!--End of 호흡수-->
+                    </LinearLayout>
+                </LinearLayout><!--End of 건강정보-->
+                <!--활동정보-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12.7dp"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="42.7dp"
+                    android:paddingLeft="47.7dp"
+                    android:layout_marginBottom="17.7dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/menubtn"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="활동 정보"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="18.3dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+                        <!--활동 시간-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginRight="44.3dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="활동 시간"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="16.3dp"/>
+                            <ImageView
+                                android:layout_width="54.3dp"
+                                android:layout_height="43.3dp"
+                                android:src="@drawable/time"
+                                android:layout_marginBottom="17.7dp"/>
+                            <TextView
+                                android:id="@+id/ex_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="128/m"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"/>
+                        </LinearLayout><!--End of 활동 시간-->
+                        <!--소모한 열량-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="소모한 열량"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="10.7dp" />
+                            <ImageView
+                                android:layout_width="56dp"
+                                android:layout_height="54dp"
+                                android:src="@drawable/kcal"
+                                android:layout_marginBottom="12.7dp" />
+                            <TextView
+                                android:id="@+id/ex_kcal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="24/m"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp" />
+                        </LinearLayout><!--End of 소모한 열량-->
+                    </LinearLayout>
+                </LinearLayout><!--End of 활동정보-->
+                <!--목표-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12.7dp"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="42.7dp"
+                    android:paddingLeft="47.7dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/menubtn"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="목표"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="19dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="27.3dp">
+                            <ImageView
+                                android:layout_width="74.3dp"
+                                android:layout_height="71.3dp"
+                                android:src="@drawable/percentage"/>
+                            <TextView
+                                android:id="@+id/goal_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40dp"
+                                android:text="30%"
+                                android:textColor="@color/blue"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="17dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2kg"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/blue"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 감량하기"
+                                    android:textSize="16sp"
+                                    android:textColor="#4d4d4d"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="목표체중 : 8kg"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout><!--End of 목표-->
+            </LinearLayout>
+
+
+
+            <!--원형 프로필 사진-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo"/>
+
+
+
+            <!--먼치킨, 암컷, 2세, 11kg-->
+            <TextView
+                android:id="@+id/breed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#4d4d4d"
+                tools:text="먼치킨"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#4d4d4d"
+                tools:text="암컷"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="60dp"/>
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#4d4d4d"
+                android:gravity="end"
+                tools:text="2세"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="300dp"/>
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#4d4d4d"
+                android:gravity="end"
+                tools:text="10kg"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="335dp"/>
+            <!--</LinearLayout>End of 먼치킨, 암컷, 2세, 11kg-->
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

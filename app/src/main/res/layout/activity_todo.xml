@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context="s2017s16.kr.hs.mirim.testforpetness.TodoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/menubtn"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/dateNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3월 18일 월요일"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <!--오늘의 할일-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/menubtn"
+        android:paddingLeft="55.5dp"
+        android:paddingRight="55.5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="7dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:text="오늘의 할 일"
+            android:textSize="16sp" />
+        <!--1번 checkbox-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:layout_marginRight="8.3dp" />
+
+            <EditText
+                android:id="@+id/todo_edit1"
+                android:layout_width="104dp"
+                android:layout_height="1dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittxt"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp" />
+            <CheckBox
+                android:id="@+id/todo_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBoxTheme"/>
+        </LinearLayout>
+        <!--2번 checkbox-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2."
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:layout_marginRight="8.3dp" />
+
+            <EditText
+                android:id="@+id/todo_edit2"
+                android:layout_width="104dp"
+                android:layout_height="1dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittxt"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp" />
+            <CheckBox
+                android:id="@+id/todo_check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBoxTheme"/>
+        </LinearLayout>
+        <!--3번 checkbox-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3."
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:layout_marginRight="8.3dp" />
+
+            <EditText
+                android:id="@+id/todo_edit3"
+                android:layout_width="104dp"
+                android:layout_height="1dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittxt"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp" />
+            <CheckBox
+                android:id="@+id/todo_check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBoxTheme"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <!--progressbar 점1-->
+            <ProgressBar
+                android:id="@+id/progressdot1"
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_marginLeft="77dp"
+                android:progressDrawable="@drawable/progressdot"/>
+            <!--progressbar 점2-->
+            <ProgressBar
+                android:id="@+id/progressdot2"
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_marginLeft="77dp"
+                android:progressDrawable="@drawable/progressdot"/>
+            <!--progressbar 점3-->
+            <ProgressBar
+                android:id="@+id/progressdot3"
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_marginLeft="77dp"
+                android:progressDrawable="@drawable/progressdot"/>
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="249dp"
+            android:layout_height="10dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="55.5dp"
+        android:paddingRight="55.5dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/menubtn"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:text="오늘의 일기"
+            android:textSize="16sp"
+            android:layout_marginBottom="6dp"/>
+        <EditText
+            android:id="@+id/diary"
+            android:layout_width="283.7dp"
+            android:layout_height="133.3dp"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:background="#e3e3e3"
+            android:textSize="12sp"
+            android:hint="오늘 하루는 어땠나요?..."
+            android:textColorHint="#4d4d4d"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@color/blue"/>
+</LinearLayout>

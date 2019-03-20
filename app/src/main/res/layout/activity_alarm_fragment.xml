@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal"
+    tools:context="s2017s16.kr.hs.mirim.testforpetness.AlarmFragmentActivity">
+    <ImageView
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:src="@drawable/alarm"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="계획을 잊지 않도록"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="다양한 알람을 설정해보세요"
+        android:textSize="16sp"
+        android:layout_marginBottom="210dp"/>
+    <ImageButton
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginRight="-150dp"
+        android:src="@drawable/plus"
+        android:background="@drawable/plusbtn"/>
+</LinearLayout>
