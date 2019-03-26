@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "265507112350",
+    "firebase_url": "https://testforpetness.firebaseio.com",
+    "project_id": "testforpetness",
+    "storage_bucket": "testforpetness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265507112350:android:bcb814a527115db1",
+        "android_client_info": {
+          "package_name": "s2017s16.kr.hs.mirim.testforpetness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265507112350-ff01tin9fv0pkoqkrguoav4dvfrsck81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "s2017s16.kr.hs.mirim.testforpetness",
+            "certificate_hash": "8d3002075e7aca15bc82c4ff2ff101264f4a217f"
+          }
+        },
+        {
+          "client_id": "265507112350-6qhg93fp5telgnasf3qnmul8mdu1tbqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrQqHvN27Byz369qq912bD3MYO0s9PgCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265507112350-6qhg93fp5telgnasf3qnmul8mdu1tbqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

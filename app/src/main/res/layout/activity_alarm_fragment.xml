@@ -12,7 +12,8 @@
         android:layout_width="91dp"
         android:layout_height="91dp"
         android:src="@drawable/alarm"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="3dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,11 +26,12 @@
         android:textColor="@color/blue"
         android:text="다양한 알람을 설정해보세요"
         android:textSize="16sp"
-        android:layout_marginBottom="210dp"/>
+        android:layout_marginBottom="100dp"/>
     <ImageButton
+        android:id="@+id/addalarm"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginRight="-150dp"
         android:src="@drawable/plus"
-        android:background="@drawable/plusbtn"/>
+        android:background="@drawable/plusbtn" />
 </LinearLayout>

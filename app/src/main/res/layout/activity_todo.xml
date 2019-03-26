@@ -20,8 +20,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3월 18일 월요일"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:paddingBottom="5dp"/>
     </LinearLayout>
     <!--오늘의 할일-->
     <LinearLayout
@@ -32,7 +33,7 @@
         android:paddingLeft="55.5dp"
         android:paddingRight="55.5dp"
         android:paddingBottom="10dp"
-        android:paddingTop="7dp"
+        android:paddingTop="4dp"
         android:layout_marginBottom="10dp"
         android:gravity="center">
         <TextView
@@ -43,32 +44,30 @@
             android:textSize="16sp" />
         <!--1번 checkbox-->
         <LinearLayout
+            android:layout_marginTop="-15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
             android:layout_marginLeft="40dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1."
                 android:textSize="16sp"
-                android:textColor="#4d4d4d"
-                android:layout_marginRight="8.3dp" />
+                android:textColor="#4d4d4d" />
 
             <EditText
                 android:id="@+id/todo_edit1"
-                android:layout_width="104dp"
-                android:layout_height="1dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:background="@drawable/edittxt"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp" />
+                style="@style/editTheme"
+                android:textColor="@color/black" />
             <CheckBox
                 android:id="@+id/todo_check1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:theme="@style/CheckBoxTheme"/>
+                android:theme="@style/CheckBoxTheme" />
         </LinearLayout>
         <!--2번 checkbox-->
         <LinearLayout
@@ -77,28 +76,26 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="-10dp">
+            android:layout_marginTop="-15dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2."
                 android:textSize="16sp"
-                android:textColor="#4d4d4d"
-                android:layout_marginRight="8.3dp" />
+                android:textColor="#4d4d4d" />
 
             <EditText
                 android:id="@+id/todo_edit2"
-                android:layout_width="104dp"
-                android:layout_height="1dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:background="@drawable/edittxt"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp" />
+                style="@style/editTheme"
+                android:textColor="@color/black" />
             <CheckBox
                 android:id="@+id/todo_check2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:theme="@style/CheckBoxTheme"/>
+                android:theme="@style/CheckBoxTheme" />
         </LinearLayout>
         <!--3번 checkbox-->
         <LinearLayout
@@ -107,24 +104,22 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="-10dp"
+            android:layout_marginTop="-15dp"
             android:layout_marginBottom="5dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3."
                 android:textSize="16sp"
-                android:textColor="#4d4d4d"
-                android:layout_marginRight="8.3dp" />
+                android:textColor="#4d4d4d" />
 
             <EditText
                 android:id="@+id/todo_edit3"
-                android:layout_width="104dp"
-                android:layout_height="1dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:background="@drawable/edittxt"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp" />
+                style="@style/editTheme"
+                android:textColor="@color/black" />
             <CheckBox
                 android:id="@+id/todo_check3"
                 android:layout_width="wrap_content"
@@ -179,7 +174,7 @@
         android:paddingLeft="55.5dp"
         android:paddingRight="55.5dp"
         android:paddingBottom="20dp"
-        android:paddingTop="6dp"
+        android:paddingTop="4dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/menubtn"
         android:gravity="center">
@@ -189,11 +184,11 @@
             android:textColor="#333333"
             android:text="오늘의 일기"
             android:textSize="16sp"
-            android:layout_marginBottom="6dp"/>
+            android:layout_marginBottom="4dp"/>
         <EditText
             android:id="@+id/diary"
             android:layout_width="283.7dp"
-            android:layout_height="133.3dp"
+            android:layout_height="120dp"
             android:gravity="top"
             android:layout_gravity="center"
             android:background="#e3e3e3"

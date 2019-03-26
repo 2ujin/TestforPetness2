@@ -6,9 +6,9 @@
         <item name="colorAccent">@color/blue</item>
     </style>
 
-    <style name="CheckBoxTheme" parent="Widget.AppCompat.Button">
+    <style name="CheckBoxTheme" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="colorControlNormal">@color/black</item>
-        <item name="colorControlActivated">@color/blue</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
     </style>
 
     <style name="editTheme" parent="Widget.AppCompat.EditText">
@@ -16,6 +16,12 @@
         <item name="colorControlActivated">@color/blue</item>
         <item name="android:textCursorDrawable">@color/blue</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LoginEditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="android:textColor">@color/blue</item>
     </style>
 
 </resources>
