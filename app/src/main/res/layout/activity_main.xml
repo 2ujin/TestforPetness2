@@ -7,9 +7,6 @@
     android:orientation="vertical"
     android:background="@color/bgcolor"
     tools:context="s2017s16.kr.hs.mirim.testforpetness.MainActivity">
-    <!--RelativeLayout = fragment + FrameLayout
-        FrameLayout > LinearLayout(vertical)
-        LinearLayout(vertical) = LinearLayout(horizontal) + LinearLayout(horizontal)-->
     <fragment
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

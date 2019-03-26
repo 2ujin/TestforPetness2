@@ -93,6 +93,7 @@ public class TodoActivity extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "저장되었습니다 :)", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "bool1"+bool1, Toast.LENGTH_SHORT).show();
                 //myRef.child("date").push().setValue(currentdate);
                 if(myRef.child("date").child(currentdate)==null) {
                     myRef.child("date").child(currentdate).child("todo1").push().setValue(edit1.getText().toString());

@@ -13,6 +13,7 @@ import s2017s16.kr.hs.mirim.testforpetness.Fragment1Activity;
 import s2017s16.kr.hs.mirim.testforpetness.Fragment2Activity;
 import s2017s16.kr.hs.mirim.testforpetness.R;
 
+
 public class MyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

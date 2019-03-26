@@ -8,6 +8,7 @@
     tools:context="s2017s16.kr.hs.mirim.testforpetness.Fragment2Activity"
     android:background="@color/bgcolor">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

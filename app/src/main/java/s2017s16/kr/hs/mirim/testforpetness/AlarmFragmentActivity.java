@@ -15,6 +15,12 @@ public class AlarmFragmentActivity extends Fragment {
         View view = inflater.inflate(R.layout.activity_alarm_fragment, container, false);
 
         addalarm=(ImageButton)view.findViewById(R.id.addalarm);
+        addalarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         return view;
     }

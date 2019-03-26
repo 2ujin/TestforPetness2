@@ -15,6 +15,7 @@ public class StatusActivity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.activity_status, container, false);
+
         return view;
     }//onCreateView
 }

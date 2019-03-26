@@ -12,6 +12,7 @@ public class Fragment3Activity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View rootView=inflater.inflate(R.layout.activity_fragment3, container, false);
+
         return rootView;
     }//onCreateView
 }

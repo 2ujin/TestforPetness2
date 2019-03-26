@@ -7,7 +7,8 @@
     tools:context="s2017s16.kr.hs.mirim.testforpetness.LoginActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/loginbg">
+    android:background="@color/loginbg"
+    android:paddingTop="60dp">
     <ImageView
         android:layout_width="95dp"
         android:layout_height="95dp"
@@ -57,4 +58,14 @@
         android:text="회원가입"
         android:textColor="@color/blue"
         android:gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호를 잊으셨나요?"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"/>
 </LinearLayout>

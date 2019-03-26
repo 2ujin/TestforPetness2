@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 
 public class Fragment2Activity extends Fragment {
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.activity_fragment2, container, false);

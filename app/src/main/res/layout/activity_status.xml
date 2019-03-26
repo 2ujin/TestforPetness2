@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="#888888"
     tools:context="s2017s16.kr.hs.mirim.testforpetness.StatusActivity">
+
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scroll"
         android:layout_gravity="center"
